@@ -257,6 +257,159 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/28/以iphone6为设计稿动态计算rem/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="宋浩">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="前端博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/28/以iphone6为设计稿动态计算rem/" itemprop="url">
+                  以iphone6为设计稿动态计算rem
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-28T17:15:16+08:00">
+                2017-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/常用命令与方法/" itemprop="url" rel="index">
+                    <span itemprop="name">常用命令与方法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/28/以iphone6为设计稿动态计算rem/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/28/以iphone6为设计稿动态计算rem/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>rem 单位在做移动端的h5开发的时候是最经常使用的单位。为解决自适应的问题，我们需要动态的给文档的更节点添加font-size 值。使用mediaquery 可以解决这个问题，但是每一个文件都引用一大串的font-size 值很繁琐，而且值也不能达到连续的效果。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * [以iPhone6的设计稿为例js动态设置文档 rem 值]</div><div class="line"> * @param  &#123;[type]&#125; currClientWidth [当前客户端的宽度]</div><div class="line"> * @param  &#123;[type]&#125; fontValue [计算后的 fontvalue值]</div><div class="line"> * @return &#123;[type]&#125;     [description]</div><div class="line"> */</div><div class="line">&lt;script&gt;</div><div class="line">    <span class="keyword">var</span> currClientWidth, fontValue,originWidth;</div><div class="line">    <span class="comment">//originWidth用来设置设计稿原型的屏幕宽度（这里是以 Iphone 6为原型的设计稿）</span></div><div class="line">    originWidth=<span class="number">375</span>;</div><div class="line">    __resize();</div><div class="line"></div><div class="line">    <span class="comment">//注册 resize事件</span></div><div class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">'resize'</span>, __resize, <span class="literal">false</span>);</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">__resize</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        currClientWidth = <span class="built_in">document</span>.documentElement.clientWidth;</div><div class="line">        <span class="comment">//这里是设置屏幕的最大和最小值时候给一个默认值</span></div><div class="line">        <span class="keyword">if</span> (currClientWidth &gt; <span class="number">640</span>) currClientWidth = <span class="number">640</span>;</div><div class="line">        <span class="keyword">if</span> (currClientWidth &lt; <span class="number">320</span>) currClientWidth = <span class="number">320</span>;</div><div class="line">        <span class="comment">//</span></div><div class="line">        fontValue = ((<span class="number">62.5</span> * currClientWidth) /originWidth).toFixed(<span class="number">2</span>);</div><div class="line">        <span class="built_in">document</span>.documentElement.style.fontSize = fontValue + <span class="string">'%'</span>;</div><div class="line">    &#125;</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/28/正则表达式大全/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -319,8 +472,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/正则表达式大全/" itemprop="url" rel="index">
-                    <span itemprop="name">正则表达式大全</span>
+                  <a href="/categories/常用命令与方法/" itemprop="url" rel="index">
+                    <span itemprop="name">常用命令与方法</span>
                   </a>
                 </span>
 
@@ -606,7 +759,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -628,7 +781,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
