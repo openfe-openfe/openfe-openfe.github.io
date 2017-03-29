@@ -87,18 +87,25 @@
 
 
 
-<meta name="description" content="12345678910关于运行提示network request filed解决方案：这个需要我们在xcode里面操作。找到info.plist文件 ，这里需要添加Allow Arbitrary Loads（一定是在App Transport Security Settings里面添加  ）类型是布尔值 并且设置为true。我的RN版本是.33版本 ，并没有带这个，所以会出现问题，需要我们手动添加">
+<meta name="description" content="```关于运行提示network request filed解决方案：这个需要我们在xcode里面操作。
+找到info.plist文件 ，这里需要添加Allow Arbitrary Loads（一定是在App Transport Security Settings里面添加  ）类型是布尔值 并且设置为true。
+我的RN版本是.33版本 ，并没有带这个，所以会出现问题，需要我们手动添加。
+另外如果">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于react-native run-ios 运行提示network request filed的解决办法">
 <meta property="og:url" content="http://yoursite.com/2016/10/20/关于react-native-run-ios-运行提示network-request-filed的解决办法/index.html">
 <meta property="og:site_name" content="前端博客">
-<meta property="og:description" content="12345678910关于运行提示network request filed解决方案：这个需要我们在xcode里面操作。找到info.plist文件 ，这里需要添加Allow Arbitrary Loads（一定是在App Transport Security Settings里面添加  ）类型是布尔值 并且设置为true。我的RN版本是.33版本 ，并没有带这个，所以会出现问题，需要我们手动添加">
-<meta property="og:image" content="http://songhao888.cn/wp-content/uploads/2016/10/QQ20161020-0.png">
-<meta property="og:updated_time" content="2017-03-29T00:48:24.000Z">
+<meta property="og:description" content="```关于运行提示network request filed解决方案：这个需要我们在xcode里面操作。
+找到info.plist文件 ，这里需要添加Allow Arbitrary Loads（一定是在App Transport Security Settings里面添加  ）类型是布尔值 并且设置为true。
+我的RN版本是.33版本 ，并没有带这个，所以会出现问题，需要我们手动添加。
+另外如果">
+<meta property="og:updated_time" content="2017-03-29T08:20:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于react-native run-ios 运行提示network request filed的解决办法">
-<meta name="twitter:description" content="12345678910关于运行提示network request filed解决方案：这个需要我们在xcode里面操作。找到info.plist文件 ，这里需要添加Allow Arbitrary Loads（一定是在App Transport Security Settings里面添加  ）类型是布尔值 并且设置为true。我的RN版本是.33版本 ，并没有带这个，所以会出现问题，需要我们手动添加">
-<meta name="twitter:image" content="http://songhao888.cn/wp-content/uploads/2016/10/QQ20161020-0.png">
+<meta name="twitter:description" content="```关于运行提示network request filed解决方案：这个需要我们在xcode里面操作。
+找到info.plist文件 ，这里需要添加Allow Arbitrary Loads（一定是在App Transport Security Settings里面添加  ）类型是布尔值 并且设置为true。
+我的RN版本是.33版本 ，并没有带这个，所以会出现问题，需要我们手动添加。
+另外如果">
 
 
 
@@ -355,8 +362,10 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">关于运行提示network request filed解决方案：</div><div class="line">这个需要我们在xcode里面操作。</div><div class="line"></div><div class="line">找到info.plist文件 ，这里需要添加Allow Arbitrary Loads（一定是在App Transport Security Settings里面添加  ）类型是布尔值 并且设置为true。</div><div class="line"></div><div class="line">我的RN版本是.33版本 ，并没有带这个，所以会出现问题，需要我们手动添加。</div><div class="line"></div><div class="line">另外如果按照老的文章，添加NSAppTransportSecurity 会提示覆盖（千万别覆盖，因为他会重新生成一个新的App Transport Security Settings）， 里面都是空的。倘若你覆盖了，则需要重新添加Exception Domains-&gt;localtion-&gt;NSTemporaryExceptionAllowsInsecureHTTPLoads</div><div class="line"></div><div class="line">最后配一张图，按照图上面的配置，react-native run-ios 就不会提示网络请求失败了</div></pre></td></tr></table></figure>
-<p><img src="http://songhao888.cn/wp-content/uploads/2016/10/QQ20161020-0.png" alt=""></p>
+        <p>```<br>关于运行提示network request filed解决方案：<br>这个需要我们在xcode里面操作。</p>
+<p>找到info.plist文件 ，这里需要添加Allow Arbitrary Loads（一定是在App Transport Security Settings里面添加  ）类型是布尔值 并且设置为true。</p>
+<p>我的RN版本是.33版本 ，并没有带这个，所以会出现问题，需要我们手动添加。</p>
+<p>另外如果按照老的文章，添加NSAppTransportSecurity 会提示覆盖（千万别覆盖，因为他会重新生成一个新的App Transport Security Settings）， 里面都是空的。倘若你覆盖了，则需要重新添加Exception Domains-&gt;localtion-&gt;NSTemporaryExceptionAllowsInsecureHTTPLoads</p>
 
       
     </div>
