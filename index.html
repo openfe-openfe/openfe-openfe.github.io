@@ -257,6 +257,160 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/07/前端vim最佳配置文件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="宋浩">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="前端博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/07/前端vim最佳配置文件/" itemprop="url">
+                  前端vim最佳配置文件
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-07T14:02:00+08:00">
+                2017-03-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/常用命令与方法/" itemprop="url" rel="index">
+                    <span itemprop="name">常用命令与方法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/07/前端vim最佳配置文件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/前端vim最佳配置文件/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>效果图<br><img src="images/vim.png" alt=""></p>
+<h2 id="替换说明"><a href="#替换说明" class="headerlink" title="替换说明"></a>替换说明</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">1. cp /usr/share/vim/vimrc ~/.vimrc</div><div class="line"></div><div class="line">2.vim ~/.vimrc</div><div class="line"></div><div class="line">3.copy下面的配置替换</div><div class="line"></div><div class="line">4 进入vim 执行:PlugInstall回车</div><div class="line"></div><div class="line">5 退出重进即可</div></pre></td></tr></table></figure>
+<h2 id="相关配置文件"><a href="#相关配置文件" class="headerlink" title="相关配置文件"></a>相关配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div></pre></td><td class="code"><pre><div class="line">if &amp;compatible</div><div class="line">set nocompatible</div><div class="line">endif</div><div class="line">set hidden</div><div class="line"></div><div class="line">set autochdir</div><div class="line">set shortmess=a</div><div class="line">set autowriteall</div><div class="line"></div><div class="line">inoremap &lt;C-L&gt; &lt;Esc&gt;:&lt;c-u&gt;wa&lt;CR&gt;</div><div class="line">nnoremap &lt;C-L&gt; &lt;Esc&gt;:&lt;c-u&gt;wa&lt;CR&gt;</div><div class="line"></div><div class="line">call plug#begin(&apos;~/.vim/plugged&apos;)</div><div class="line">Plug &apos;Shutnik/jshint2.vim&apos;</div><div class="line">Plug &apos;posva/vim-vue&apos;</div><div class="line">Plug &apos;Yggdroot/indentLine&apos;</div><div class="line">Plug &apos;vim-scripts/vim-auto-save&apos;</div><div class="line">Plug &apos;vim-ruby/vim-ruby&apos;</div><div class="line">Plug &apos;jiangmiao/auto-pairs&apos;</div><div class="line">Plug &apos;othree/html5.vim&apos;</div><div class="line">Plug &apos;vimoutliner/vimoutliner&apos;</div><div class="line">Plug &apos;leafgarland/typescript-vim&apos;</div><div class="line">Plug &apos;/usr/local/opt/fzf&apos;</div><div class="line">Plug &apos;junegunn/fzf.vim&apos;</div><div class="line">Plug &apos;tpope/vim-repeat&apos;</div><div class="line">Plug &apos;tpope/vim-rails&apos;</div><div class="line">Plug &apos;vim-airline/vim-airline&apos;</div><div class="line">Plug &apos;vim-airline/vim-airline-themes&apos;</div><div class="line">Plug &apos;wting/gitsessions.vim&apos;</div><div class="line">Plug &apos;godlygeek/tabular&apos;</div><div class="line">Plug &apos;plasticboy/vim-markdown&apos;</div><div class="line">Plug &apos;reedes/vim-colors-pencil&apos;</div><div class="line">Plug &apos;xolox/vim-misc&apos;</div><div class="line">Plug &apos;hail2u/vim-css3-syntax&apos;</div><div class="line">Plug &apos;groenewege/vim-less&apos;</div><div class="line">Plug &apos;mikewest/vimroom&apos;</div><div class="line">Plug &apos;sjl/gundo.vim&apos;</div><div class="line">Plug &apos;altercation/vim-colors-solarized&apos;</div><div class="line">Plug &apos;ervandew/supertab&apos;</div><div class="line">Plug &apos;groenewege/vim-less&apos;</div><div class="line">Plug &apos;hail2u/vim-css3-syntax&apos;</div><div class="line">Plug &apos;pangloss/vim-javascript&apos;</div><div class="line">Plug &apos;kchmck/vim-coffee-script&apos;</div><div class="line">Plug &apos;ctrlpvim/ctrlp.vim&apos;</div><div class="line">Plug &apos;mattn/emmet-vim&apos;</div><div class="line">Plug &apos;romainl/flattened&apos;</div><div class="line">Plug &apos;scrooloose/nerdcommenter&apos;</div><div class="line">Plug &apos;scrooloose/nerdtree&apos;</div><div class="line">Plug &apos;jistr/vim-nerdtree-tabs&apos;</div><div class="line">Plug &apos;Xuyuanp/nerdtree-git-plugin&apos;</div><div class="line">Plug &apos;airblade/vim-rooter&apos;</div><div class="line">Plug &apos;vim-scripts/gitignore&apos;</div><div class="line">Plug &apos;elzr/vim-json&apos;</div><div class="line">&quot;colors</div><div class="line">Plug &apos;tomasr/molokai&apos;</div><div class="line">Plug &apos;dsolstad/vim-wombat256i&apos;</div><div class="line">Plug &apos;vim-scripts/wombat256.vim&apos;</div><div class="line">&quot; snips</div><div class="line">Plug &apos;MarcWeber/vim-addon-mw-utils&apos;</div><div class="line">Plug &apos;tomtom/tlib_vim&apos;</div><div class="line">Plug &apos;garbas/vim-snipmate&apos;</div><div class="line">Plug &apos;honza/vim-snippets&apos;</div><div class="line"></div><div class="line">&quot;neovim</div><div class="line">&quot;Plug &apos;Shougo/deoplete.nvim&apos;</div><div class="line">&quot;Plug &apos;Shougo/neoyank.vim&apos;</div><div class="line">&quot;Plug &apos;Shougo/neomru.vim&apos;</div><div class="line">&quot;Plug &apos;Shougo/vimproc.vim&apos;</div><div class="line">&quot;Plug &apos;Shougo/unite.vim&apos;</div><div class="line">&quot;Plug &apos;tsukkee/unite-tag&apos;</div><div class="line">&quot;Plug &apos;ujihisa/unite-colorscheme&apos;</div><div class="line">&quot;Plug &apos;lambdalisue/unite-grep-vcs&apos;</div><div class="line"></div><div class="line">call plug#end()</div><div class="line">filetype plugin indent on</div><div class="line">syntax enable</div><div class="line">&quot; js hint 2</div><div class="line">let jshint2_save = 1</div><div class="line">let jshint2_max_height = 12</div><div class="line">&quot; git gutter</div><div class="line">let g:gitgutter_diff_args = &apos;--ignore-all-space --ignore-blank-lines&apos;</div><div class="line"></div><div class="line">let g:session_autosave = &apos;no&apos;</div><div class="line"></div><div class="line">let g:gundo_preview_height = 30</div><div class="line">let g:gundo_right = 1</div><div class="line">let g:syntastic_json_checkers = [&apos;jsonlint&apos;]</div><div class="line">let g:vim_json_syntax_conceal = 0</div><div class="line"></div><div class="line">set guioptions-=L</div><div class="line">set guioptions-=r</div><div class="line">let mapleader = &quot;\&lt;space&gt;&quot;</div><div class="line">let g:mapleader = &quot;\&lt;space&gt;&quot;</div><div class="line">let g:EasyGrepWindowPosition = &quot;botright&quot;</div><div class="line"></div><div class="line">set noshowmode</div><div class="line">set autoread</div><div class="line">set iskeyword=@,$,48-57,192-255,_</div><div class="line"></div><div class="line">&quot; nerdtree</div><div class="line">let g:NERDTreeWinPos = &quot;right&quot;</div><div class="line">let NERDTreeChDirMode=2</div><div class="line">let NERDTreeQuitOnOpen=1</div><div class="line">nnoremap &lt;leader&gt;f :&lt;C-u&gt;NERDTreeFind&lt;CR&gt;</div><div class="line">&quot;nnoremap &lt;leader&gt;e :&lt;C-u&gt;NERDTree .&lt;CR&gt;\|:wincmd p&lt;CR&gt;</div><div class="line"></div><div class="line">&quot; NERDTree tabs</div><div class="line">let g:nerdtree_tabs_open_on_console_startup = 0</div><div class="line">let g:nerdtree_tabs_open_on_new_tab = 0</div><div class="line">let g:nerdtree_tabs_autofind = 0</div><div class="line"></div><div class="line">nnoremap &lt;leader&gt;k :Bclose&lt;CR&gt;</div><div class="line">&quot; auto save</div><div class="line">let g:auto_save = 1 &quot; enable AutoSave on Vim startup</div><div class="line">let g:auto_save_in_insert_mode = 0</div><div class="line"></div><div class="line">&quot; ctrlp</div><div class="line">let g:ctrlp_custom_ignore = &#123;</div><div class="line">\ &apos;dir&apos;: &apos;\v[\/]((\.(git|hg|svn))|(bower_components|node_modules|target))$&apos;,</div><div class="line">\ &apos;file&apos;: &apos;\v\.(exe|so|dll)$&apos;,</div><div class="line">\ &apos;link&apos;: &apos;some_bad_symbolic_links&apos;,</div><div class="line">\ &#125;</div><div class="line">nnoremap &lt;leader&gt;b :b#&lt;CR&gt;</div><div class="line">nnoremap &lt;c-b&gt; :CtrlPBuffer&lt;CR&gt;</div><div class="line">inoremap &lt;c-b&gt; &lt;ESC&gt;:CtrlPBuffer&lt;CR&gt;</div><div class="line">nnoremap &lt;c-e&gt; :CtrlPMRUFiles&lt;CR&gt;</div><div class="line">inoremap &lt;c-e&gt; &lt;ESC&gt;:CtrlPMRUFiles&lt;CR&gt;</div><div class="line">noremap &lt;c-g&gt; &lt;ESC&gt;:Ag&lt;CR&gt;</div><div class="line">let g:ctrlp_use_caching = 0</div><div class="line">set grepprg=ag\ --nogroup\ --nocolor</div><div class="line">let g:ctrlp_user_command = &apos;ag %s -l --nocolor -g &quot;&quot;&apos;</div><div class="line">autocmd Filetype ruby,coffee,sass,scss,jade,erb setlocal ts=2 sw=2</div><div class="line">autocmd Filetype md,markdown setlocal ts=4 sw=4</div><div class="line">autocmd Filetype mk,markdown setlocal expandtab</div><div class="line">au BufNewFile,BufRead *.vue setlocal filetype=vue</div><div class="line">autocmd Filetype vue setlocal filetype=html</div><div class="line">autocmd Filetype coffee SnipMateLoadScope eruby</div><div class="line"></div><div class="line">&quot; emmet</div><div class="line">let g:user_emmet_install_global = 1</div><div class="line">&quot;autocmd FileType html,erb,css,less,sass,scss EmmetInstall</div><div class="line">&quot;autocmd FileType html,erb,css,less,sass,scss imap &lt;buffer&gt; &lt;expr&gt; &lt;tab&gt; emmet#expandAbbrIntelligent(&quot;\&lt;tab&gt;&quot;)</div><div class="line">let g:user_emmet_leader_key=&apos;&lt;C-A-S-Z&gt;&apos;</div><div class="line">imap &lt;C-y&gt; &lt;plug&gt;(emmet-expand-abbr)</div><div class="line">nmap &lt;C-y&gt; &lt;plug&gt;(emmet-expand-abbr)</div><div class="line">vmap &lt;C-y&gt; &lt;plug&gt;(emmet-expand-abbr)</div><div class="line"></div><div class="line">&quot; markdown</div><div class="line">let g:vim_markdown_folding_disabled=1</div><div class="line">let g:vim_markdown_folding_style_pythonic = 0</div><div class="line">let g:vim_markdown_conceal = 0</div><div class="line"></div><div class="line">let g:session_autoload = &apos;no&apos;</div><div class="line"></div><div class="line">&quot; tab</div><div class="line">map &lt;leader&gt;1 :b 1&lt;cr&gt;</div><div class="line">map &lt;leader&gt;2 :b 2&lt;cr&gt;</div><div class="line">map &lt;leader&gt;3 :b 3&lt;cr&gt;</div><div class="line">map &lt;leader&gt;4 :b 4&lt;cr&gt;</div><div class="line">map &lt;leader&gt;5 :b 5&lt;cr&gt;</div><div class="line">map &lt;leader&gt;6 :b 6&lt;cr&gt;</div><div class="line">map &lt;leader&gt;7 :b 7&lt;cr&gt;</div><div class="line">map &lt;leader&gt;8 :b 8&lt;cr&gt;</div><div class="line">map &lt;leader&gt;9 :b 9&lt;cr&gt;</div><div class="line">map &lt;s-tab&gt; :bp&lt;cr&gt;</div><div class="line">nnoremap &lt;C-T&gt; :tabnew %:p&lt;CR&gt;</div><div class="line">nnoremap &lt;tab&gt; :bn&lt;cr&gt;</div><div class="line"></div><div class="line">&quot; fold</div><div class="line">set nofen</div><div class="line">set foldlevel=0</div><div class="line">set foldmethod=manual</div><div class="line">set foldnestmax=5</div><div class="line"></div><div class="line">vnoremap &lt;space&gt;&lt;space&gt; zf</div><div class="line">nnoremap &lt;space&gt;&lt;space&gt; za</div><div class="line">&quot;encoding</div><div class="line">set encoding=utf8</div><div class="line">scriptencoding utf-8</div><div class="line">set fileencodings=ucs-bom,utf-8,gbk,cp936,gb18030,big5,euc-jp,euc-kr,latin1</div><div class="line">autocmd BufNewFile,BufRead *.git/&#123;,modules/**/&#125;&#123;COMMIT,MERGE&#125;* set fenc=utf8</div><div class="line"></div><div class="line">&quot; better</div><div class="line">set lazyredraw</div><div class="line">map q: :q</div><div class="line">&quot;vnoremap &lt;silent&gt; y y`]</div><div class="line">&quot;vnoremap &lt;silent&gt; p p`]</div><div class="line">&quot;nnoremap &lt;silent&gt; p p`]</div><div class="line">nnoremap &lt;Leader&gt;w :w&lt;CR&gt;</div><div class="line">vmap &lt;Leader&gt;y &quot;+y</div><div class="line">vmap &lt;Leader&gt;d &quot;+d</div><div class="line">nmap &lt;Leader&gt;p &quot;+p</div><div class="line">nmap &lt;Leader&gt;P &quot;+P</div><div class="line">vmap &lt;Leader&gt;p &quot;+p</div><div class="line">vmap &lt;Leader&gt;t :tabnew&lt;CR&gt;</div><div class="line">function! ClipboardYank()</div><div class="line">call system(&apos;pbcopy&apos;, @@)</div><div class="line">endfunction</div><div class="line">function! ClipboardPaste()</div><div class="line">let @@ = system(&apos;pbpaste&apos;)</div><div class="line">endfunction</div><div class="line"></div><div class="line">noremap ;; :%s:::g&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;</div><div class="line">noremap ;&apos; :%s:::cg&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;&lt;Left&gt;</div><div class="line">autocmd FileType coffee,erb,html,css,scss,rb setlocal foldmethod=indent</div><div class="line">map 0 ^</div><div class="line">map j gj</div><div class="line">map k gk</div><div class="line">nnoremap Y &quot;+y</div><div class="line">nnoremap &lt;silent&gt;&lt;S-b&gt; :&lt;C-u&gt;call search(&apos;\&lt;\&lt;Bar&gt;\U\@&lt;=\u\&lt;Bar&gt;\u\ze\%(\U\&amp;\&gt;\@!\)\&lt;Bar&gt;\%^&apos;,&apos;bW&apos;)&lt;CR&gt;</div><div class="line">nnoremap &lt;silent&gt;&lt;S-w&gt; :&lt;C-u&gt;call search(&apos;\&lt;\&lt;Bar&gt;\U\@&lt;=\u\&lt;Bar&gt;\u\ze\%(\U\&amp;\&gt;\@!\)\&lt;Bar&gt;\%$&apos;,&apos;W&apos;)&lt;CR&gt;</div><div class="line">noremap &lt;C-S&gt; :w&lt;CR&gt;</div><div class="line">vnoremap &lt;C-T&gt; :tabnew %:p:h&lt;CR&gt;</div><div class="line">noremap &lt;F11&gt; &lt;C-u&gt;:wincmd o&lt;CR&gt;</div><div class="line">autocmd BufReadPost * if line(&quot;&apos;\&quot;&quot;) &gt; 0 &amp;&amp; line(&quot;&apos;\&quot;&quot;) &lt;= line(&quot;$&quot;) | exe &quot;normal! g`\&quot;&quot; | endif &quot; Return to last edit position when opening files (You want this!)</div><div class="line">set autoindent</div><div class="line">set nosmartindent</div><div class="line">set nocindent</div><div class="line">set backspace=eol,start,indent</div><div class="line">set background=light</div><div class="line">&quot;set completeopt=menuone</div><div class="line">set expandtab</div><div class="line">set listchars=tab:&gt;·</div><div class="line">set fileformats=unix,dos,mac</div><div class="line">set history=10000</div><div class="line">set hlsearch</div><div class="line">set ignorecase</div><div class="line">set incsearch</div><div class="line">set laststatus=2</div><div class="line">set lbr</div><div class="line">set mat=2</div><div class="line">set mouse=</div><div class="line">set mousemodel=extend</div><div class="line">set nobackup</div><div class="line">set switchbuf=usetab</div><div class="line">set nolinebreak</div><div class="line">set noswapfile</div><div class="line">set nowb</div><div class="line">set nowrap</div><div class="line">set pastetoggle=&lt;F4&gt;</div><div class="line">set relativenumber</div><div class="line">set number</div><div class="line">set sessionoptions-=buffers</div><div class="line">set sessionoptions-=options</div><div class="line">set shiftwidth=2</div><div class="line">set showmatch</div><div class="line">set smartcase</div><div class="line">set smarttab</div><div class="line">set splitbelow</div><div class="line">set splitright</div><div class="line">set tabstop=2</div><div class="line">set undodir=/Users/frank/.vim/undodir/</div><div class="line">set undofile</div><div class="line">set viminfo^=% &quot; Remember info about open buffers on close</div><div class="line"></div><div class="line">&quot; wild</div><div class="line">set whichwrap+=&lt;,&gt;,h,l</div><div class="line">set wildignore=*.o,*~,*.pyc</div><div class="line">set wildmenu</div><div class="line">set wildchar=&lt;Tab&gt; wildmenu wildmode=full</div><div class="line">set wildcharm=&lt;C-Z&gt;</div><div class="line">nnoremap &lt;M-`&gt; :b &lt;C-Z&gt;</div><div class="line"></div><div class="line">&quot; airline</div><div class="line">&quot;let g:airline_section_b = &apos;%&#123;strftime(&quot;%H:%M&quot;)&#125;&apos;</div><div class="line"></div><div class="line">if has(&quot;gui_running&quot;)</div><div class="line">set guifont=Sauce\ Code\ Powerline:h13</div><div class="line">endif</div><div class="line"></div><div class="line">&quot; colorscheme</div><div class="line">colorscheme molokai</div><div class="line">set colorcolumn=0</div><div class="line">map &lt;F11&gt; :let &amp;background = ( &amp;background == &quot;dark&quot;? &quot;light&quot; : &quot;dark&quot; )&lt;CR&gt;</div><div class="line"></div><div class="line">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</div><div class="line">&quot; =&gt; Helper functions</div><div class="line">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</div><div class="line"></div><div class="line">&quot; Don&apos;t close window, when deleting a buffer</div><div class="line">command! Bclose call &lt;SID&gt;BufcloseCloseIt()</div><div class="line">function! &lt;SID&gt;BufcloseCloseIt()</div><div class="line">let l:currentBufNum = bufnr(&quot;%&quot;)</div><div class="line">let l:alternateBufNum = bufnr(&quot;#&quot;)</div><div class="line"></div><div class="line">if buflisted(l:alternateBufNum)</div><div class="line">buffer #</div><div class="line">else</div><div class="line">bnext</div><div class="line">endif</div><div class="line"></div><div class="line">if bufnr(&quot;%&quot;) == l:currentBufNum</div><div class="line">new</div><div class="line">endif</div><div class="line"></div><div class="line">if buflisted(l:currentBufNum)</div><div class="line">execute(&quot;bdelete! &quot;.l:currentBufNum)</div><div class="line">endif</div><div class="line">endfunction</div><div class="line"></div><div class="line">autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o</div><div class="line"></div><div class="line">let vimDir = &apos;$HOME/.vim&apos;</div><div class="line">let &amp;runtimepath.=&apos;,&apos;.vimDir</div><div class="line">set undolevels=1000 &quot; How many undos</div><div class="line">set undoreload=20000 &quot; number of lines to save for undo</div><div class="line"></div><div class="line">&quot; Keep undo history across sessions by storing it in a file</div><div class="line">if has(&apos;persistent_undo&apos;)</div><div class="line">let myUndoDir = expand(vimDir . &apos;/undodir&apos;)</div><div class="line">&quot; Create dirs</div><div class="line">call system(&apos;mkdir &apos; . vimDir)</div><div class="line">call system(&apos;mkdir &apos; . myUndoDir)</div><div class="line">let &amp;undodir = myUndoDir</div><div class="line">set undofile</div><div class="line">endif</div><div class="line"></div><div class="line">autocmd FileType nerdtree call s:nerdtree_settings()</div><div class="line">function! s:nerdtree_settings()</div><div class="line">&quot; Play nice with supertab</div><div class="line">&quot; Enable navigation with control-j and control-k in insert mode</div><div class="line">nmap &lt;buffer&gt; &lt;ESC&gt; :NERDTreeClose&lt;CR&gt;</div><div class="line">nmap &lt;buffer&gt; &lt;c-c&gt; :NERDTreeClose&lt;CR&gt;</div><div class="line">nmap &lt;buffer&gt; ` :NERDTreeClose&lt;CR&gt;</div><div class="line">endfunction</div><div class="line"></div><div class="line">&quot;airline</div><div class="line">let g:airline#extensions#tabline#enabled = 1</div><div class="line">let g:airline_powerline_fonts = 1</div><div class="line"></div><div class="line">&quot; StripTrailingWhitespaces</div><div class="line">nnoremap &lt;silent&gt; &lt;F5&gt; :let _s=@/&lt;Bar&gt;:%s/\s\+$//e&lt;Bar&gt;:let @/=_s&lt;Bar&gt;:nohl&lt;CR&gt;</div><div class="line">&quot;set spell spelllang=en_us</div><div class="line"></div><div class="line">&quot;rails</div><div class="line">nnoremap &lt;leader&gt;rt :&lt;c-u&gt;!rails t&lt;CR&gt;</div><div class="line">nnoremap &lt;leader&gt;rr :&lt;c-u&gt;!bin/rake routes&lt;CR&gt;</div><div class="line">nnoremap &lt;leader&gt;rv :&lt;c-u&gt;Eview&lt;CR&gt;</div><div class="line">nnoremap &lt;leader&gt;rc :&lt;c-u&gt;Econtroller&lt;CR&gt;</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/03/以iphone6为设计稿动态计算rem/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -913,7 +1067,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -935,7 +1089,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
